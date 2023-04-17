@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="calculo()">Comprar produto</button>
+    <script>
+        function calculo(){
+            var item = window.prompt('Que produto vocês está comprando?')
+            var n1 =  (window.prompt(`Quanto custa ${item} que você está comprando ?`))
+            var n2 = Number(window.prompt(`Qual foi o valor  que você deu para comprar o ${item}?`))
+            var soma = n1 - n2
+            window.alert(`Você comprou o ${item} que custou ${n1}. Deu ${n2} e vai receber  ${soma} de troco. Volte sempre!`)
+
+        }
+
+    </script>
+</body>
+</html>
